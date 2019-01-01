@@ -123,7 +123,7 @@ body{
 
 /* typography */
 
-.header-text{
+.header-text {
   font-size: 3rem;
   font-weight: bold;
   color: #fd69aa;
@@ -132,15 +132,22 @@ body{
 }
 
 
-.hairstyle{
-
+.hairstyle {
+  background:url(../img/bg4.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 20px;
 }
-
+.kosmetyczne {
+  background:url(../img/bg4.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+}
 @media only screen and (max-width: 990px){
   .topbar {
     display: none;
