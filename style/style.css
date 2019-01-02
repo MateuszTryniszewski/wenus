@@ -1,10 +1,77 @@
-*, address, p, nav, .navbar{
+*, address, p, nav, .navbar, ul{
   margin: 0;
   padding: 0;
 }
 body{
   font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
 }
+/* preloader */
+#loader-wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999999;
+  background: rgb(255, 236, 252);
+  /* display: none; */
+}
+.load {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  /* display: none; */
+}
+
+.load hr {
+  border: 0;
+  margin: 0;
+  width: 40%;
+  height: 40%;
+  position: absolute;
+  border-radius: 50%;
+  animation: spin 2s ease infinite;
+}
+
+.load :first-child {
+  background: #fd69aa;
+  animation-delay: -1.5s;
+}
+
+.load :nth-child(2) {
+  background: #fd69aa;
+  animation-delay: -1s;
+}
+
+.load :nth-child(3) {
+  background: #fd69aa;
+  animation-delay: -0.5s;
+}
+
+.load :last-child {
+  background: #fd69aa;
+}
+
+@keyframes spin {
+  0%, 100% {
+      transform: translate(0)
+  }
+  25% {
+      transform: translate(160%)
+  }
+  50% {
+      transform: translate(160%, 160%)
+  }
+  75% {
+      transform: translate(0, 160%)
+  }
+}
+/* preloader - end */
+
 .topbar{
   background: #fd69aa;
   color: #fff;
@@ -88,6 +155,9 @@ body{
   border-bottom: 1px solid #be008f;
 }
 .spacing{
+  margin-bottom: 40px;
+}
+.spacing-desktop{
   margin-bottom: 40px;
 }
 .top{
@@ -235,6 +305,9 @@ h4 ~ p {
   .scroll {
     margin-top: 0px;
   }
+  .spacing-desktop{
+    margin-bottom: 0px;
+  }
   .menu .navbar .navbar-nav .nav-item{
     border-bottom: 1px solid #eee
   }
@@ -275,5 +348,10 @@ h4 ~ p {
     width: 100%;
     z-index: -2;
   }
-
+  .timeline{
+    margin-top:0px;
+    /* padding: 0px 15px; */
+    /* border-left: 2px solid #320016; */
+    list-style: none;
+  }
 }
