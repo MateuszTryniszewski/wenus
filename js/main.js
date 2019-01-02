@@ -34,13 +34,6 @@ window.addEventListener("scroll", function() {
 //menu end
 
 
-window.sr = ScrollReveal();
-sr.reveal('img,h1,h2,p,ul,li,address', {
-    reset: false,
-    delay: 200,
-    distance: '50px',
-    origin: 'right'
-});
 
 
 // scroll reveal
