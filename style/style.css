@@ -88,7 +88,10 @@ body{
   border-bottom: 1px solid #be008f;
 }
 .spacing{
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+}
+.top{
+  margin-top: 40px;
 }
 .bottom{
   margin-bottom: 30px;
@@ -97,7 +100,7 @@ body{
 
 /* timeline */
 .timeline{
-  margin: 20px 0px;
+  margin-top: 20px;
   /* padding: 0px 15px; */
   /* border-left: 2px solid #320016; */
   list-style: none;
@@ -141,57 +144,64 @@ body{
   font-size: 2rem;
   color:rgb(53, 53, 53)
 }
-
+.image{
+  border-radius: 20px;
+  width: 100%;
+  border: 5px solid #f8f8f8;
+  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.2)
+}
+.right{
+  text-align: left;
+}
+.left{
+  text-align: right;
+}
 /* typography */
-
+.manicure {
+  position: relative;
+}
+h4{
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0.2;
+  color: #222;
+  font-size: 1.3rem;
+}
+h4 ~ p {
+  color: #666;
+}
+.manicure::before {
+    background-image: url(../img/3.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.manicure::after {
+  background-image: url(../img/2.png);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -2;
+}
 .header-text {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: bold;
   color: #fd69aa;
 
-  line-height: 6rem;
-}
-.hairstyle {
-  padding: 20px;
-  height: 100%;
-  position: relative;
-}
-.hairstyle::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -2;
-  background:url(../img/bg4.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.5;
-}
-.hairstyle2 {
-  padding: 20px;
-  height: 100%;
-  position: relative;
-}
-.hairstyle2::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -2;
-  background:url(../img/bg5.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.5;
+  line-height: 2rem;
 }
 .kosmetyczne {
   background:url(../img/bg4.jpg);
@@ -225,9 +235,6 @@ body{
   .scroll {
     margin-top: 0px;
   }
-  .menu {
-
-  }
   .menu .navbar .navbar-nav .nav-item{
     border-bottom: 1px solid #eee
   }
@@ -244,6 +251,29 @@ body{
     top:0;
     transform: translateX(0%);
   }
-
+  .manicure::before {
+    background-image: url(../img/3.png);
+    background-repeat: no-repeat;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.3;
+    position: absolute;
+    top: 150px;
+    width: 100%;
+  }
+  .manicure::after {
+    background-image: url(../img/2.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.3;
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    z-index: -2;
+  }
 
 }
