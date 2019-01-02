@@ -33,12 +33,6 @@ window.addEventListener("scroll", function() {
 });
 //menu end
 
-
-
-
-// scroll reveal
-
-
 // //jquery code
 // //menu - scroll effect
 $(document).ready(function() { 
