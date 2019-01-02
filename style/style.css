@@ -90,6 +90,10 @@ body{
 .spacing{
   margin-bottom: 30px;
 }
+.bottom{
+  margin-bottom: 30px;
+  display: inline-block;
+}
 
 /* timeline */
 .timeline{
@@ -106,13 +110,14 @@ body{
 
 .footer{
   padding: 30px 0px;
-  background: url(../img/bg8.jpg);
+  background: #f9e8f9;
+
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .footer .address{
-  color: #320016;
+  color: #000000;
 }
 .logo{
   position: absolute;
@@ -120,25 +125,73 @@ body{
   top:0;
   transform: translateX(-50%);
 }
+.footer-contact {
+  list-style: none;
+}
+.footer-contact li{
+  position: relative;
+  padding-left: 50px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.footer-contact li i{
+  position: absolute;
+  left: 0;
+  top: 20px;
+  font-size: 2rem;
+  color:rgb(53, 53, 53)
+}
 
 /* typography */
 
 .header-text {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #fd69aa;
-  padding-top: 20px;
+
   line-height: 6rem;
 }
-
-
 .hairstyle {
+  padding: 20px;
+  height: 100%;
+  position: relative;
+}
+.hairstyle::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
   background:url(../img/bg4.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 0.5;
+}
+.hairstyle2 {
   padding: 20px;
+  height: 100%;
+  position: relative;
+}
+.hairstyle2::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background:url(../img/bg5.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
 }
 .kosmetyczne {
   background:url(../img/bg4.jpg);
@@ -163,6 +216,7 @@ body{
     background-size: cover;
     margin-top: 0px;
     padding-top: 80px;
+    text-align: center;
   }
   .hidden{
     opacity: 0;
