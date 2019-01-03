@@ -55,7 +55,11 @@ body{
 .load :last-child {
   background: #fd69aa;
 }
-
+.iframe{
+  border: 0;
+  width: 100%;
+  height: 450px;
+}
 @keyframes spin {
   0%, 100% {
       transform: translate(0)
@@ -113,7 +117,7 @@ body{
 }
 .header{
   width: 100%;
-  background-color: #fd69a925;
+  background-color: rgba(253, 105, 169, 0.2);
   background-image: url(../img/header-bg.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -234,7 +238,7 @@ h4{
   text-transform: uppercase;
   font-weight: 400;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  letter-spacing: 0.2;
+  letter-spacing: 0.1rem;
   color: #222;
   font-size: 1.3rem;
 }
