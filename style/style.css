@@ -161,11 +161,20 @@ body{
 .spacing{
   margin-bottom: 40px;
 }
+.spacing2{
+  margin-bottom: 80px;
+}
 .spacing-desktop{
   margin-bottom: 40px;
 }
 .top{
   margin-top: 40px;
+}
+.top2{
+  margin-top: 40px;
+}
+.top3{
+  margin:40px 0px;
 }
 .bottom{
   margin-bottom: 30px;
@@ -177,6 +186,9 @@ body{
   margin-top: 20px;
   /* padding: 0px 15px; */
   /* border-left: 2px solid #320016; */
+  list-style: none;
+}
+.list {
   list-style: none;
 }
 .event{
@@ -289,6 +301,12 @@ h4 ~ p {
   .topbar {
     display: none;
   }
+  .right{
+    text-align: center;
+  }
+  .left{
+    text-align: center;
+  }
   .header .header-content{
     padding: 40px 0px;
   }
@@ -357,5 +375,11 @@ h4 ~ p {
     /* padding: 0px 15px; */
     /* border-left: 2px solid #320016; */
     list-style: none;
+  }
+  .top2{
+    margin-top: 0px;
+  }
+  .top3{
+    display:none;
   }
 }
